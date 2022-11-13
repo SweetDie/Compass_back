@@ -60,7 +60,7 @@ pipeline  {
         
         stage("docker run") {
             steps {
-                echo " ============== starting frontend =================="
+                echo " ============== starting backend =================="
                 sh '''
                 docker run -d --restart=always --name back_dashboard -p 5000:8080 sweetdie/back_dashboard:latest
                 '''
